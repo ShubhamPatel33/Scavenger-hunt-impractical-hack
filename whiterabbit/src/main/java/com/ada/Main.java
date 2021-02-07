@@ -6,7 +6,10 @@ package com.ada;
 
 import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
+import org.javacord.api.entity.channel.TextChannel;
 import org.javacord.api.event.message.MessageCreateEvent;
+
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args){
@@ -16,7 +19,6 @@ public class Main {
                 .login().join();
 
         api.addListener(new Listener());
-
 
     }
 }
